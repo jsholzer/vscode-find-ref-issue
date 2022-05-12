@@ -1,0 +1,17 @@
+// tsconfig for use with Jest tests run via ts-jest
+{
+  "extends": "./tsconfig.json",
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "paths":{
+      "~/src/*": ["./src/*"]
+    },
+    "plugins": [
+      {
+        "transform": "ts-auto-mock/transformer",
+        "cacheBetweenTests": false
+      }
+    ]
+  },
+}
