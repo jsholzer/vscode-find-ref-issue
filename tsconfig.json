@@ -1,10 +1,9 @@
 {
-  "extends": "ts-node/node16/tsconfig.json",
   "include": ["./src/**/*.ts"],
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": ".",
-    "target": "es6",
+    //"target": "es6",
     "strict": false,
     "esModuleInterop": true,
     "module":"CommonJS",
@@ -16,5 +15,7 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
+    "target": "es2021",
+    "skipLibCheck": true,
   }
 }
