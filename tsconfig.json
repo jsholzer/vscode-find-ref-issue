@@ -16,14 +16,5 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-  },
-
-  "ts-node": {
-    "transpileOnly": true,
-    "files": true,
-    "compilerOptions": {
-      "target": "ESNext",
-      "module": "ESNext"
-    }
   }
 }
